@@ -1,116 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="Pt-br">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Imports Icon -->
     <link rel="icon" type="imagen/con" href="./Assets/Icons/icon.svg">
 
-    <!-- Font Awesome -->
+    <!-- Imports Icons Via CDN -->
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
 
     <!-- Imports Style CSS -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="Screen.css">
+
+    <!-- Imports Script JS com defer ou async -->
+    <script defer src="script.js"></script>
 
     <title>Tela de Login</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="forms-container">
+    <main class="container">
+
+        <!-- Container de Formularios -->
+        <section class="forms-container">
             <div class="signin-signup">
+
+                <!-- Formulario de Login -->
                 <form action="#" class="sign-in-form">
+
+                    <!-- Title -->
                     <h2 class="title">Sign in</h2>
+
+                    <!-- Inputs -->
                     <div class="input-field">
                         <i class="fas fa-user"></i>
                         <input type="text" placeholder="Username" />
                     </div>
+
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
                         <input type="password" placeholder="Password" />
                     </div>
+
+                    <!-- Button criado como input -->
                     <input type="submit" value="Login" class="btn solid" />
-                    <p class="social-text">Or Sign in with social platforms</p>
-                    <div class="social-media">
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-google"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </div>
+
+                    <!-- Texto de Redirecionamento -->
+                    <p class="social-text">
+                        Não tem uma conta? Faça sua conta aqui! <br> Ou utilizar suas plataformas sociais!
+                    </p>
+
+                    <!-- Botões de Redirecionamento para midias sociais -->
+                    <ul class="social-media">
+                        <li>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-google"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+
                 </form>
+
+                <!-- Formulario de Cadastro -->
                 <form action="#" class="sign-up-form">
+
+                    <!-- Title -->
                     <h2 class="title">Sign up</h2>
+
+                    <!-- Inputs -->
                     <div class="input-field">
                         <i class="fas fa-user"></i>
                         <input type="text" placeholder="Username" />
                     </div>
+
                     <div class="input-field">
                         <i class="fas fa-envelope"></i>
                         <input type="email" placeholder="Email" />
                     </div>
+
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
                         <input type="password" placeholder="Password" />
                     </div>
+
+                    <!-- Button criado como input -->
                     <input type="submit" class="btn" value="Sign up" />
-                    <p class="social-text">Or Sign up with social platforms</p>
-                    <div class="social-media">
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-google"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </div>
+
+                    <!-- Texto de Redirecionamento -->
+                    <p class="social-text">Já e inscrito? Faça seu login aqui! <br> Ou acesse com suas plataformas
+                        sociais.</p>
+
+                    <!-- Botões de Redirecionamento para midias sociais -->
+                    <ul class="social-media">
+                        <li>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-google"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+
+                    </ul>
                 </form>
             </div>
-        </div>
+        </section>
 
-        <div class="panels-container">
+        <!-- Container de Painel -->
+        <section class="panels-container">
+
+            <!-- Painel esquerdo de Direcionamento -->
             <div class="panel left-panel">
                 <div class="content">
-                    <h3>New here ?</h3>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
-                        ex ratione. Aliquid!
-                    </p>
+
+                    <!-- Titulo -->
+                    <h3> Novo Aqui ?</h3>
+
+                    <!-- Texto de Digitação -->
+                    <span>
+                        <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=10&letterSpacing=2px&pause=1000&color=FFFFFF&vCenter=true&multiline=true&random=true&lines=Seja+bem-vindo+ao+nosso+site+!"
+                            alt="Typing SVG" />
+                    </span>
+
+                    <!-- Botão de Redirecionamento -->
                     <button class="btn transparent" id="sign-up-btn">
                         Sign up
                     </button>
                 </div>
+
+                <!-- Imagem de Fundo -->
                 <img src="./Assets/img/Login.svg" class="image" alt="" />
             </div>
+
+            <!-- Painel direito de Direcionamento -->
             <div class="panel right-panel">
                 <div class="content">
-                    <h3>One of us ?</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-                        laboriosam ad deleniti.
-                    </p>
+
+                    <!-- Titulo -->
+                    <h3>Já tem cadastro ?</h3>
+
+                    <!-- Texto de Digitação -->
+                    <span>
+                        <img class="img-digit" src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=10&letterSpacing=2px&pause=1000&color=FFFFFF&vCenter=true&multiline=true&random=true&lines=+Aproveite+todas+as+vantagens+da+nossa+comunidade!"
+                            alt="Typing SVG" />
+                    </span>
+
+                    <!-- Botão de Redirecionamento -->
                     <button class="btn transparent" id="sign-in-btn">
                         Sign in
                     </button>
                 </div>
+
+                <!-- Imagem de Fundo -->
                 <img src="./Assets/img/register.svg" class="image" alt="" />
             </div>
-        </div>
-    </div>
-
-    <script src="app.js"></script>
+        </section>
+    </main>
 </body>
 
 </html>
