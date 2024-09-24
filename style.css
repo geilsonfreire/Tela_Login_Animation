@@ -4,14 +4,14 @@ main {
     width: 100%;
     min-height: 100vh;
     background: #fff;
-    overflow: hidden;
+    
 }
 
 main:before {
     content: "";
     position: absolute;
-    height: 2000px;
-    width: 2000px;
+    height: 500%;
+    width: 500%;
     top: -10%;
     right: 48%;
     transform: translateY(-50%);
@@ -211,7 +211,7 @@ form.sign-in-form {
 }
 
 .panel span img {
-    padding-left: 11rem;
+    padding-left: 5rem;
     padding-top: 1rem;
 }
 
